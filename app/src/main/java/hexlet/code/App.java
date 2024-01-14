@@ -1,9 +1,6 @@
 package hexlet.code;
 
-import hexlet.code.Games.Calculator;
-import hexlet.code.Games.Game;
-import hexlet.code.Games.Greet;
-import hexlet.code.Games.NOD;
+import hexlet.code.Games.*;
 
 import java.util.Scanner;
 public class App {
@@ -14,6 +11,8 @@ public class App {
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
         System.out.println("4 - GCD");
+        System.out.println("5 - Progression");
+        System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         var userNumber = sc.next();
         System.out.println("Your choice: " + userNumber);
@@ -24,13 +23,19 @@ public class App {
             Cli.salutation();
         }
         if (userNumber.equals("2")) {
-            Greet.greet();
+            Even.even();
         }
         if (userNumber.equals("3")) {
             Calculator.calc();
         }
         if (userNumber.equals("4")){
             NOD.nod();
+        }
+        if (userNumber.equals("5")) {
+           Progression.progression();
+        }
+        if (userNumber.equals("6")){
+            Prime.prime();
         } else {
             System.out.println(" ");
         }

@@ -1,5 +1,10 @@
 package hexlet.code;
 
+import hexlet.code.Games.Calculator;
+import hexlet.code.Games.Game;
+import hexlet.code.Games.Greet;
+import hexlet.code.Games.NOD;
+
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
@@ -8,6 +13,7 @@ public class App {
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
+        System.out.println("4 - GCD");
         System.out.println("0 - Exit");
         var userNumber = sc.next();
         System.out.println("Your choice: " + userNumber);
@@ -15,13 +21,16 @@ public class App {
         if (userNumber.equals("1")) {
             System.out.println("Your choice: " + userNumber);
             System.out.println("Welcome to the Brain Games!");
-            Cli.main();
+            Cli.salutation();
         }
         if (userNumber.equals("2")) {
-            Game.sw();
+            Greet.greet();
         }
-        else if (userNumber.equals("3")) {
-                Calculator.calc();
+        if (userNumber.equals("3")) {
+            Calculator.calc();
+        }
+        if (userNumber.equals("4")){
+            NOD.nod();
         } else {
             System.out.println(" ");
         }

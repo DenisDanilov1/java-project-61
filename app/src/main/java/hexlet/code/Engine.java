@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Engine {
 
-    public static void engine(String[] questions, int[] results, String task) {
+    public static void engine(String[] questions, String[] results, String task) {
         Scanner sc = new Scanner(System.in);
         System.out.println("May I have your name?");
         String userName = sc.next();
@@ -29,23 +29,3 @@ public class Engine {
         }
     }
 }
-
-//class Enge {
-//    protected String[] questions;
-//    public int[] results;
-//    protected String task;
-//     Enge(String[] questions,int[] results, String task){
-//        this.questions = questions;
-//        this.results = results;
-//        this.task = task;
-//    }
-//    public void getQuestions(String[] questions) {
-//        this.questions = questions;
-//    }
-//    public void getResults(int[] results) {
-//        this.results = results;
-//    }
-//    public void getTask(String task) {
-//        this.task = task ;
-//    }
-//}

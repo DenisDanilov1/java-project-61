@@ -7,7 +7,7 @@ public class Calculator {
     public static void calc() {
         String task = "What is the result of the expression?";
         String[] questions = new String[3];
-        int[] results = new int[3];
+        String[] results = new String[3];
         for (int i = 0; i < 3; i = i + 1) {
             String[] operation = {" * ", " - ", " + "};
             Random random = new Random();
@@ -18,13 +18,13 @@ public class Calculator {
             questions[i] = random1 + operator + random2;
             switch (operator) {
                 case " * ":
-                    results[i] = random1 * random2;
+                    results[i] = String.valueOf(random1 * random2);
                     break;
                 case " - ":
-                    results[i] = random1 - random2;
+                    results[i] = String.valueOf(random1 - random2);
                     break;
                 case " + ":
-                    results[i] = random1 + random2;
+                    results[i] = String.valueOf(random1 + random2);
                     break;
                 default:
                     System.out.println("Incorrect operator is selected");

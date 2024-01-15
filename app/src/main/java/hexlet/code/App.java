@@ -3,6 +3,7 @@ package hexlet.code;
 import hexlet.code.Games.*;
 
 import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -32,7 +33,7 @@ public class App {
             NOD.nod();
         }
         if (userNumber.equals("5")) {
-           Progression.progression();
+            Progression.progression();
         }
         if (userNumber.equals("6")){
             Prime.prime();

@@ -1,8 +1,9 @@
 package hexlet.code.Games;
 
 import hexlet.code.Engine;
-import java.util.Arrays;
 
+
+import java.math.BigInteger;
 import java.util.Random;
 
 public class Prime {
@@ -17,14 +18,15 @@ public class Prime {
             questions[i] = str1;
             if (random1 < 2) {
                 results[i] = "no";
-            }
-            int[] simple = { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
-            if (Arrays.asList(simple).contains(random1)) {
-                results[i] = "yes";
             } else {
-                results[i] = "no";
+                class IsPrime {
+                    public boolean isPrime(int number) {
+                        BigInteger bigInt = BigInteger.valueOf(number);
+                        return bigInt.isProbablePrime(100);
+                    }
+                }
             }
+            Engine.engine(questions, results, task);
         }
-        Engine.engine(questions, results, task);
     }
 }

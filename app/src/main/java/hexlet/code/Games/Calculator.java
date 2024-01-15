@@ -8,8 +8,8 @@ public class Calculator {
         String task = "What is the result of the expression?";
         String[] questions = new String[3];
         String[] results = new String[3];
-        for (int i = 0; i < 3; i = i + 1) {
-            String[] operation = {" * ", " - ", " + "};
+        for (int i = 0; i < 3; i++) {
+            String[] operation = {"*", "-", "+"};
             Random random = new Random();
             int randIndex = random.nextInt(2);
             int random1 = random.nextInt(10);
@@ -17,13 +17,13 @@ public class Calculator {
             String operator = operation[randIndex];
             questions[i] = random1 + operator + random2;
             switch (operator) {
-                case " * ":
+                case "*":
                     results[i] = String.valueOf(random1 * random2);
                     break;
-                case " - ":
+                case "-":
                     results[i] = String.valueOf(random1 - random2);
                     break;
-                case " + ":
+                case "+":
                     results[i] = String.valueOf(random1 + random2);
                     break;
                 default:

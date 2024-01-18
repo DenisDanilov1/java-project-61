@@ -13,7 +13,7 @@ public class Even {
             Random random = new Random();
             int random1 = random.nextInt(100);
             questions[i] = String.valueOf(random1);
-            String answer = (random1 % 2 == 0) ? (results[i] = "yes") : (results[i] = "no");
+            results[i] = random1 % 2 == 0 ? "yes" : "no";
         }
         Engine.engine(questions, results, task);
     }

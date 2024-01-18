@@ -1,14 +1,54 @@
-<<<<<<< HEAD
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/DenisDanilov1/java-project-61/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DenisDanilov1/java-project-61/actions)
+# java-package
+![Java CI](https://github.com/hexlet-boilerplates/java-package/workflows/Java%20CI/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2aa7676a928b36b1514e/maintainability)](https://codeclimate.com/github/DenisDanilov1/java-project-61/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/2aa7676a928b36b1514e/test_coverage)](https://codeclimate.com/github/DenisDanilov1/java-project-61/test_coverage)
-[![asciicast](https://asciinema.org/a/3WDF50LiHwQY4muqvGBgtzwCJ.svg)](https://asciinema.org/a/3WDF50LiHwQY4muqvGBgtzwCJ)
-[![asciicast](https://asciinema.org/a/4O57mqygYvzrCsfVvjlUfbFVc.svg)](https://asciinema.org/a/4O57mqygYvzrCsfVvjlUfbFVc)
-[![asciicast](https://asciinema.org/a/F0jiJGFHGk3XaCZN5LFVIWjC9.svg)](https://asciinema.org/a/F0jiJGFHGk3XaCZN5LFVIWjC9)
-[![asciicast](https://asciinema.org/a/1BNQ73Sa7iRGjV7pFHG18Fct3.svg)](https://asciinema.org/a/1BNQ73Sa7iRGjV7pFHG18Fct3)
-[![asciicast](https://asciinema.org/a/CTmSoZeIlSemlLADyfzuElCGX.svg)](https://asciinema.org/a/CTmSoZeIlSemlLADyfzuElCGX)
-=======
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/DenisDanilov1/java-project-61/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DenisDanilov1/java-project-61/actions)
+
+A project template with only the bare minimum of structure. A good starting point for a small project. 
+
+## Start
+
+```bash
+make
+```
+
+## Setup
+
+```bash
+make build
+```
+
+## Run
+
+```bash
+make run
+```
+
+## Run tests
+
+```bash
+make test
+```
+
+## Run checkstyle
+
+```bash
+make lint
+```
+
+## Check update dependencies and plugins
+
+```bash
+make update
+```
+
+## asdf
+
+On *nix and macOS to manage Java versions we recommend using asdf https://github.com/asdf-vm/asdf. 
+
+   
+[![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=java-package)
+
+This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=java-package).
+
+See most active contributors on [hexlet-friends](https://friends.hexlet.io/).
 

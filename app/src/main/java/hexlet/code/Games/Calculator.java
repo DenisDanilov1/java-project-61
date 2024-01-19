@@ -1,35 +1,42 @@
 package hexlet.code.Games;
 
 import hexlet.code.Engine;
-import java.util.Random;
+import hexlet.code.Utils;
+
 
 public class Calculator {
+    public static final String task = "What is the result of the expression?";
+    public static final int MIN= 0;
+    public static final int MAX = 10;
+
     public static void calc() {
-        String task = "What is the result of the expression?";
-        String[] questions = new String[3];
-        String[] results = new String[3];
-        for (int i = 0; i < 3; i++) {
+        String[][] data = new String[Engine.ROUNDS][2];
+        for (int i = 0; i < Engine.ROUNDS; i++) {
             String[] operation = {"*", "-", "+"};
-            Random random = new Random();
-            int randIndex = random.nextInt(2);
-            int random1 = random.nextInt(10);
-            int random2 = random.nextInt(10);
+            int randIndex = Utils.generateNumber(MIN, operation.length-1);
+            int random1 = Utils.generateNumber(MIN, MAX);
+            int random2 = Utils.generateNumber(MIN, MAX);
             String operator = operation[randIndex];
-            questions[i] = random1 + operator + random2;
+            int correctAnswer = 0;
+            String question = random1 + " " + operator + " " + random2;
             switch (operator) {
                 case "*":
-                    results[i] = String.valueOf(random1 * random2);
+                    correctAnswer = random1 * random2;
                     break;
                 case "-":
-                    results[i] = String.valueOf(random1 - random2);
+                    correctAnswer = random1 - random2;
                     break;
                 case "+":
-                    results[i] = String.valueOf(random1 + random2);
+                    correctAnswer = random1 + random2;
                     break;
                 default:
                     System.out.println("Incorrect operator is selected");
             }
+            String correct = String.valueOf(correctAnswer);
+
+            data[i][0] = question;
+            data[i][1] = correct;
         }
-        Engine.engine(questions, results, task);
+        Engine.engine(data, task);
     }
 }

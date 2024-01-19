@@ -28,15 +28,15 @@ public class App {
         }
         if (userNumber.equals("3")) {
             Calculator.calc();
-        }
-        if (userNumber.equals("4")){
-            NOD.nod();
-        }
-        if (userNumber.equals("5")) {
-            Progression.progression();
-        }
-        if (userNumber.equals("6")){
-            Prime.prime();
+//
+//        if (userNumber.equals("4")){
+//            NOD.nod();
+//        }
+//        if (userNumber.equals("5")) {
+//            Progression.progression();
+//        }
+//        if (userNumber.equals("6")){
+//            Prime.prime();
         } else {
             System.out.println(" ");
         }

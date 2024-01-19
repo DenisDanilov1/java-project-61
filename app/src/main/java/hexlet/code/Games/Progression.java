@@ -1,30 +1,34 @@
 package hexlet.code.Games;
 
 import hexlet.code.Engine;
+import hexlet.code.Utils;
 
-import java.util.Random;
-import java.util.Scanner;
 
 public class Progression {
+    public static final String task = "What number is missing in the progression?";
+    public static final int MIN = 1;
+    public static final int MAX = 30;
+    private static final int PROGRESSION_LENGHT = 10;
     public static void progression() {
-        String task = "What number is missing in the progression?";
-        String[] questions = new String[3];
-        String[] results = new String[3];
-        for (int i = 0; i < 3; i++) {
-            Random random = new Random();
-            int stepProgression = random.nextInt(10);
-            int startProgression = random.nextInt(100);
-            int randIndex = random.nextInt(10);
+        String[][] data = new String[Engine.ROUNDS][2];
+        for (int i = 0; i < Engine.ROUNDS; i++) {
+            int stepProgression = Utils.generateNumber(MIN, MAX);
+            int startProgression = Utils.generateNumber(MIN, MAX);
+            int randIndex = Utils.generateNumber(MIN, PROGRESSION_LENGHT);
             String[] progression = new String[10];
             int num = startProgression;
-            for (int j = 0; j < 10; j++) {
+            for (int j = 0; j < PROGRESSION_LENGHT; j++) {
                 progression[j] = Integer.toString(num);
                 num = num + stepProgression;
             }
-            results[i] = progression[randIndex];
+            String correctAnswer = progression[randIndex];
             progression[randIndex] = "..";
-            questions[i] = String. join (" ", progression);
+            String question = String.join(" ", progression);
+
+
+            data[i][0] = question;
+            data[i][1] = correctAnswer;
         }
-        Engine.engine(questions, results, task);
+        Engine.engine(data, task);
     }
 }

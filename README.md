@@ -20,7 +20,7 @@ make build
 ## Run
 
 ```bash
-make run
+make run-dist
 ```
 
 ## Run tests

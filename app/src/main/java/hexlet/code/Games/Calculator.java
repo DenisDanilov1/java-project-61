@@ -30,7 +30,7 @@ public class Calculator {
                     correctAnswer = random1 + random2;
                     break;
                 default:
-                    System.out.println("Incorrect operator is selected");
+                    System.out.println("Invalid operator passed");
             }
             String correct = String.valueOf(correctAnswer);
 

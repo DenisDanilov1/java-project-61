@@ -3,13 +3,13 @@ package hexlet.code.Games;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 
-
 public class Calculator {
+
     public static final String task = "What is the result of the expression?";
     public static final int MIN= 0;
     public static final int MAX = 10;
 
-    public static void calc() {
+    public static void playCalc() {
         String[][] data = new String[Engine.ROUNDS][2];
         for (int i = 0; i < Engine.ROUNDS; i++) {
             String[] operation = {"*", "-", "+"};
@@ -37,6 +37,6 @@ public class Calculator {
             data[i][0] = question;
             data[i][1] = correct;
         }
-        Engine.engine(data, task);
+        Engine.playEngine(data, task);
     }
 }

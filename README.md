@@ -2,8 +2,13 @@
 ![Java CI](https://github.com/hexlet-boilerplates/java-package/workflows/Java%20CI/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2aa7676a928b36b1514e/maintainability)](https://codeclimate.com/github/DenisDanilov1/java-project-61/maintainability)
 
+<p><b>“Brain Games”</b> is a set of five console games built on the principle of popular mobile applications for brain training. Each game asks questions that would be answered correctly. After three correct answers, the game is considered completed. Wrong answers end the game and prompt you to play it again. Included games:</p>
 
-A project template with only the bare minimum of structure. A good starting point for a small project. 
+* Even. Definition of an even number.
+* Calculator. Arithmetic expressions to be evaluated.
+* GCD. Determination of the greatest common divisor.
+* Progression. Progression. Finding missing numbers in a sequence of numbers.
+* Prime. Definition of a prime number. 
 
 ## Start
 

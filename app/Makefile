@@ -10,10 +10,10 @@ build:
 	./gradlew clean build
 
 install:
-	./gradlew clean install
+	./gradlew make install
 
 run-dist:
-	./build/install/app/bin/app
+	./build/install/app/bin/app make run-dist
 
 run:
 	./gradlew run

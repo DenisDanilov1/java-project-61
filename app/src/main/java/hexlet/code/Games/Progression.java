@@ -8,7 +8,6 @@ public class Progression {
     public static final String task = "What number is missing in the progression?";
     public static final int MIN = 1;
     public static final int MAX = 20;
-
     private static final int PROGRESSION_LENGHT = 10;
 
     public static void playProgression() {

@@ -9,7 +9,7 @@ public class Even {
     public static final int MIN= 1;
     public static final int MAX = 100;
 
-    public static void even() {
+    public static void playEven() {
         String [][] data = new String[Engine.ROUNDS][2];
         for (int i = 0; i < Engine.ROUNDS; i++) {
             int random = Utils.generateNumber(MIN, MAX);

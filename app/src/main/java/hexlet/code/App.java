@@ -1,10 +1,10 @@
 package hexlet.code;
 
 import hexlet.code.Games.*;
-
 import java.util.Scanner;
 
 public class App {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter the game number and press Enter.");
@@ -24,19 +24,19 @@ public class App {
             Cli.salutation();
         }
         if (userNumber.equals("2")) {
-            Even.even();
+            Even.playEven();
         }
         if (userNumber.equals("3")) {
-            Calculator.calc();
+            Calculator.playCalc();
         }
         if (userNumber.equals("4")){
-            NOD.nod();
+            GCD.playGCD();
         }
         if (userNumber.equals("5")) {
-            Progression.progression();
+            Progression.playProgression();
         }
         if (userNumber.equals("6")){
-            Prime.prime();
+            Prime.playPrime();
         } else {
             System.out.println(" ");
         }

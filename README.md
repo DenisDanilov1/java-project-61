@@ -8,7 +8,7 @@ A project template with only the bare minimum of structure. A good starting poin
 ## Start
 
 ```bash
-make
+make install
 ```
 
 ## Setup

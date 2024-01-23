@@ -18,27 +18,29 @@ public class App {
         var userNumber = sc.next();
         System.out.println("Your choice: " + userNumber);
         System.out.println(" ");
-        if (userNumber.equals("1")) {
-            System.out.println("Your choice: " + userNumber);
-            System.out.println("Welcome to the Brain Games!");
-            Cli.salutation();
-        }
-        if (userNumber.equals("2")) {
-            Even.playEven();
-        }
-        if (userNumber.equals("3")) {
-            Calculator.playCalc();
-        }
-        if (userNumber.equals("4")){
-            GCD.playGCD();
-        }
-        if (userNumber.equals("5")) {
-            Progression.playProgression();
-        }
-        if (userNumber.equals("6")){
-            Prime.playPrime();
-        } else {
-            System.out.println(" ");
+        switch (userNumber) {
+            case "1":
+                Cli.salutation();
+                break;
+            case "2":
+                Even.playEven();
+                break;
+            case "3":
+                Calculator.playCalc();
+                break;
+            case "4":
+                GCD.playGCD();
+                break;
+            case "5":
+                Progression.playProgression();
+                break;
+            case "6":
+                Prime.playPrime();
+                break;
+            case "0":
+                break;
+            default:
+                System.out.println("Your choice is not correct");
         }
     }
 }

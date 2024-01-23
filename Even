@@ -1,0 +1,12 @@
+{"version": 2, "width": 202, "height": 19, "timestamp": 1705245978, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.046179, "o", "\u001b[?2004h\u001b]0;denis_danilov@DESKTOP-QTBRE6B: /mnt/c/Users/Гена Букин/IdeaProjects/app/java-project-61\u0007\u001b[01;32mdenis_danilov@DESKTOP-QTBRE6B\u001b[00m:\u001b[01;34m/mnt/c/Users/Гена Букин/IdeaProjects/app/java-project-61\u001b[00m$ "]
+[1.817981, "o", "exit"]
+[2.273896, "o", "\b\b\b\bmake run-dist"]
+[3.058471, "o", "\r\n\u001b[?2004l\r"]
+[3.06375, "o", "make: *** No rule to make target 'run-dist'.  Stop.\r\n"]
+[3.064124, "o", "\u001b[?2004h\u001b]0;denis_danilov@DESKTOP-QTBRE6B: /mnt/c/Users/Гена Букин/IdeaProjects/app/java-project-61\u0007\u001b[01;32mdenis_danilov@DESKTOP-QTBRE6B\u001b[00m:\u001b[01;34m/mnt/c/Users/Гена Букин/IdeaProjects/app/java-project-61\u001b[00m$ "]
+[5.874081, "o", "make run-dist"]
+[6.050265, "o", "\b\b\b\b\b\b\b\b\b\b\b\b\bexit\u001b[K"]
+[6.250139, "o", "\b\b\b\bmake run-dist"]
+[6.754141, "o", "\b\b\b\b\b\b\b\b\b\b\b\b\bexit\u001b[K"]
+[8.44254, "o", "\r\n\u001b[?2004l\rexit\r\n"]

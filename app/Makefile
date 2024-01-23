@@ -9,11 +9,11 @@ clean:
 build:
 	./gradlew  build
 
-install:
-	./gradlew make install
+make install:
+	./gradlew clean install
 
-run-dist:
-	./build/install/app/bin/app make run-dist
+make run-dist:
+	./build/install/app/bin/app
 
 run:
 	./gradlew run

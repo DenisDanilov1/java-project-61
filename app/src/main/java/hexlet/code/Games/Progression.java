@@ -37,4 +37,3 @@ public class Progression {
         return progression;
     }
 }
-

@@ -2,6 +2,7 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 import hexlet.code.Utils;
+import java.util.Arrays;
 
 public class Calculator {
 
@@ -17,26 +18,30 @@ public class Calculator {
             int random1 = Utils.generateNumber(MIN, MAX);
             int random2 = Utils.generateNumber(MIN, MAX);
             String operator = operation[randIndex];
-            int correctAnswer = 0;
             String question = random1 + " " + operator + " " + random2;
-            switch (operator) {
-                case "*":
-                    correctAnswer = random1 * random2;
-                    break;
-                case "-":
-                    correctAnswer = random1 - random2;
-                    break;
-                case "+":
-                    correctAnswer = random1 + random2;
-                    break;
-                default:
-                    System.out.println("Invalid operator " + operation + " passed");
-            }
-            String correct = String.valueOf(correctAnswer);
+            String correct = String.valueOf(calcCase(operator, operation, random1, random2));
 
             data[i][0] = question;
             data[i][1] = correct;
         }
         Engine.playEngine(data, task);
+    }
+
+    public static int calcCase(String operator, String[] operation, int random1, int random2) {
+        int correctAnswer = 0;
+        switch (operator) {
+            case "*":
+                correctAnswer = random1 * random2;
+                break;
+            case "-":
+                correctAnswer = random1 - random2;
+                break;
+            case "+":
+                correctAnswer = random1 + random2;
+                break;
+            default:
+                System.out.println("Invalid operator " + Arrays.toString(operation) + " passed");
+        }
+        return correctAnswer;
     }
 }

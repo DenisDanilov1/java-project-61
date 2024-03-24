@@ -40,7 +40,7 @@ public class App {
             case "0":
                 break;
             default:
-                System.out.println("Your choice is not correct");
+                System.out.println("Your choice " + userNumber + " is not correct");
         }
     }
 }

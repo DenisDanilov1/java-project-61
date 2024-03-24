@@ -13,10 +13,10 @@ public class Engine {
         System.out.println("Hello, " + userName + "!");
         System.out.println(task);
         for (String[] arr : data) {
-                System.out.println("Question: " + arr[0]);
-                Scanner scan = new Scanner(System.in);
-                var userNumber = scan.next();
-                System.out.println("Your answer: " + userNumber);
+            System.out.println("Question: " + arr[0]);
+            Scanner scan = new Scanner(System.in);
+            var userNumber = scan.next();
+            System.out.println("Your answer: " + userNumber);
             if (userNumber.equals(arr[1])) {
                 System.out.println("Correct!");
             } else {

@@ -8,13 +8,7 @@
 * Calculator. Arithmetic expressions to be evaluated.
 * GCD. Determination of the greatest common divisor.
 * Progression. Progression. Finding missing numbers in a sequence of numbers.
-* Prime. Definition of a prime number. 
-
-## Start
-
-```bash
-make install
-```
+* Prime. Definition of a prime number.
 
 ## Setup
 
@@ -25,6 +19,7 @@ make build
 ## Run
 
 ```bash
+make install
 make run-dist
 ```
 
@@ -48,12 +43,11 @@ make update
 
 ## asdf
 
-On *nix and macOS to manage Java versions we recommend using asdf https://github.com/asdf-vm/asdf. 
+On *nix and macOS to manage Java versions we recommend using asdf https://github.com/asdf-vm/asdf.
 
-   
+
 [![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=java-package)
 
 This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=java-package).
 
 See most active contributors on [hexlet-friends](https://friends.hexlet.io/).
-

@@ -8,15 +8,15 @@ public class Progression {
     public static final String TASK = "What number is missing in the progression?";
     public static final int MIN = 1;
     public static final int MAX = 20;
-    public static final int PROGRESSION_LENGHT = 10;
 
     public static void playProgression() {
         String[][] data = new String[Engine.ROUNDS][2];
         for (int i = 0; i < Engine.ROUNDS; i++) {
+            int progressionLenght = 10;
             int step = Utils.generateNumber(MIN, MAX);
             int first = Utils.generateNumber(MIN, MAX);
-            int randIndex = Utils.generateNumber(MIN, PROGRESSION_LENGHT);
-            String[] progression = makeProgression(first, step);
+            int randIndex = Utils.generateNumber(MIN, progressionLenght);
+            String[] progression = makeProgression(first, step, progressionLenght);
             String correctAnswer = progression[randIndex];
             progression[randIndex] = "..";
             String question = String.join(" ", progression);
@@ -27,10 +27,10 @@ public class Progression {
         Engine.playEngine(data, TASK);
     }
 
-    private static String[] makeProgression(int first, int step) {
-        String[] progression = new String[PROGRESSION_LENGHT];
+    private static String[] makeProgression(int first, int step, int progressionLenght) {
+        String[] progression = new String[progressionLenght];
 
-        for (int i = 0; i < PROGRESSION_LENGHT; i += 1) {
+        for (int i = 0; i < progressionLenght; i += 1) {
             progression[i] = Integer.toString(first + i * step);
         }
 

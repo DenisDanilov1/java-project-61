@@ -11,7 +11,7 @@ public class Progression {
 
     public static void playProgression() {
         String[][] data = new String[Engine.ROUNDS][2];
-        for (int i = 0; i < Engine.ROUNDS; i++) {
+        for (int i = 0; i < data.length; i++) {
             int progressionLenght = 10;
             int step = Utils.generateNumber(MIN, MAX);
             int first = Utils.generateNumber(MIN, MAX);

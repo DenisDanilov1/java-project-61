@@ -22,6 +22,7 @@ public class App {
         var userNumber = sc.next();
         System.out.println("Your choice: " + userNumber);
         System.out.println(" ");
+        System.out.println("Welcome to the Brain Games!");
         switch (userNumber) {
             case "1":
                 Cli.salutation();

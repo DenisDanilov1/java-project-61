@@ -11,11 +11,11 @@ public class Progression {
 
     public static void playProgression() {
         String[][] data = new String[Engine.ROUNDS][2];
-        for (int i = 0; i < data.length; i++) {
+        for (int i = 0; i < Engine.ROUNDS; i++) {
             int progressionLenght = 10;
             int step = Utils.generateNumber(MIN, MAX);
             int first = Utils.generateNumber(MIN, MAX);
-            int randIndex = Utils.generateNumber(MIN, progressionLenght);
+            int randIndex = Utils.generateNumber(0, progressionLenght - 1);
             String[] progression = makeProgression(first, step, progressionLenght);
             String correctAnswer = progression[randIndex];
             progression[randIndex] = "..";
